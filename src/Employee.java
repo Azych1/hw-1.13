@@ -42,8 +42,15 @@ public class Employee {
         this.salary = salary;
     }
 
-    public String toString() {
-       String buffer = "Ф.И.О.: "+fullName.toString()+" Отдел: " + department +" Заработная плата: "+salary+" рублей "+"id: "+id;
+    public void setSalaryByIndex(int indexationValue) {
+        this.salary = this.salary*(indexationValue+100)/100;
+    }
+
+    public String toString(int department) {
+       String buffer = "Ф.И.О.: "+fullName.toString()+" Отдел: " + department +" Заработная плата: "+salary+" рублей ";
+       if(department==0){
+           buffer = buffer+"id: "+id;
+       }
        return buffer;
     }
 
