@@ -1,6 +1,5 @@
 public class Main {
 
-
     public static void main(String[] args) {
         Employee[] employees = new Employee[10];
         employees[0] = new Employee("Вениаминов Валентин Эдгарович", 1, 12500);
